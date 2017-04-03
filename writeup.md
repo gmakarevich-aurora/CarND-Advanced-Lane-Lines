@@ -100,15 +100,16 @@ set of coordinates:
 
 
 ```python
-src_perspective = np.float32([(594, 450),
-                              (688, 450),
+src_perspective = np.float32([(564, 470),
+                              (718, 470),
                               (1050, 680),
                               (250, 680)])
 
-dst = np.float32([(465, 0),
-                  (w-465, 0),
-                  (w-465, h),
-                  (465, h)])
+
+dst = np.float32([(250, 0),
+                  (w-250, 0),
+                  (w-250, h),
+                  (250, h)])
 
 ```
 
@@ -174,7 +175,7 @@ I have the following parameters to translate from pixels to meters:
 ```python
 
 ym_per_pix = 30/720 # meters per pixel in y dimension
-xm_per_pix = 3.7/400 # meters per pixel in x dimension
+xm_per_pix = 3.7/800 # meters per pixel in x dimension
 
 ```
 
